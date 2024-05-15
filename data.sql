@@ -2,20 +2,16 @@ CREATE DATABASE planner;
 
 USE planner;
 
-CREATE TABLE tasks(
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    title VARCHAR(200) NOT NULL,
-    description VARCHAR(750) NOT NULL,
-    day DATE NOT NULL,
-    deadline DATE NOT NULL,
-    complete BOOLEAN DEFAULT 0 NOT NULL,
-    prioritiy INT NOT NULL
-    )
-INSERT INTO tasks
-(title,description,day,deadline,complete)
-VALUES
-("zvetēt sievu","ar mietu", "2023-05-14", "2023-05-15",0),
-("slānīt bērnus", "ar siksnu", "2023-05-14", "2023-05-16",0);
+CREATE TABLE Tasks (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT,
+    Title VARCHAR(100) NOT NULL,
+    Deadline DATE,
+    Status ENUM('done', 'not done') DEFAULT 'not done',
+    FOREIGN KEY (UserID) REFERENCES Users(id),
+);
+
+
 
 CREATE TABLE Users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -24,12 +20,3 @@ CREATE TABLE Users (
     Email VARCHAR(100) UNIQUE NOT NULL
 );
 
-
-
-
-
-
-
-ALTER TABLE planner
-ADD COLUMN user_id INT,
-ADD FOREIGN KEY (user_id) REFERENCES users(id);

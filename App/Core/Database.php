@@ -1,6 +1,6 @@
 <?php
 
-class DBConnect {
+class Database {
     public $dbconn;
     private $config;
 

@@ -7,7 +7,7 @@ class userModel {
     private $db;
 
     public function __construct() {
-        $this->db = new DBConnect();
+        $this->db = new Database();
     }
 
     public function createUser(string $email, string $password, string $username)
