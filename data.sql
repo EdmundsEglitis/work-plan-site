@@ -6,7 +6,6 @@ CREATE TABLE tasks(
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     title VARCHAR(200) NOT NULL,
     description VARCHAR(750) NOT NULL,
-    day DATE NOT NULL,
     deadline DATE NOT NULL,
     complete BOOLEAN DEFAULT 0 NOT NULL,
 
