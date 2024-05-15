@@ -4,10 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin-top: 10%;
   }
 
   .card {
+
     width: 600px; /* Adjust the max-width for a wider card */
     background-color: white;
     border-radius: 12px;
