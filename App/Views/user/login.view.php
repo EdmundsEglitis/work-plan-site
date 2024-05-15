@@ -1,25 +1,25 @@
-<div  >
-    <div >    
-        <div >
-        <div >
-            <h1 >Login</h1>
-        </div>
-            <form  method="post"?>
-                <div >
-                    <label for="username" >Username</label>
-                    <input type="text" value="<?= $_POST["username"] ?? null?>" id="username" name="username" required >
-                    <!-- Added border class -->
+<link rel="stylesheet" href="../Public/CSS/auth.css">
+
+
+    <div class="card">
+        <div class="card-header">    
+                <h1>Login</h1>
+                </div>
+                <div class="card-body">
+            <form method="post"?>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" value="<?= $_POST["username"] ?? null?>" id="username" name="username" required>
                 </div>
 
-                <div >
-                    <label for="password" >Password:</label>
-                    <input type="password" value="<?= $_POST["password"] ?? null?>" id="password" name="password" required >
-                    <a href="/user/lostPassword"><p >Forgot your password?</p></a>
-                    <!-- Added border class -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" value="<?= $_POST["password"] ?? null?>" id="password" name="password" required>
+                    <a href="/user/lostPassword"><p>Forgot your password?</p></a>
                 </div>
 
-                <button type="submit" >Login</button>
-                <a href="/user/register"><p >Dont have an account?</p></a> 
+                <button type="submit">Login</button>
+                <a href="/user/register"><p>Don't have an account?</p></a> 
             </form>
             <?php
                 if (isset($errors) && $errors != []) {
