@@ -14,11 +14,13 @@
     text-decoration: none;
     padding: 14px 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .nav-item:hover {
-    background-color: #575757;
+    background-color: #555;
     color: white;
+    transform: scale(1.1);
 }
 
 .content {
