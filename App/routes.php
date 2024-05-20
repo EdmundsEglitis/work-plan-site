@@ -4,10 +4,11 @@ return [
 
     '/' => '../app/Controllers/index.php',
     '/user/login' => '../app/Controllers/user/login.php',
-    '   ' => '../app/Controllers/user/register.php',
+    '/user/register' => '../app/Controllers/user/register.php',
     '/user/logout' => '../app/Controllers/user/logout.php',
     '/task/index' => '../app/Controllers/task/index.task.php',
     '/task/create' => '../app/Controllers/task/create-tasks.php',
+    '/task/dashboard' => '../app/Controllers/task/dashboard.php',
     /*
     '/user/lostPassword' => '../app/Controllers/user/lostPassword.php',
     '/user/userSettings' => '../app/Controllers/user/userSettings.php',

@@ -1,7 +1,7 @@
 <div>
     <h1>Task List</h1>
 
-    <form action="/task/create" method="POST">
+    <form action="/task/dashboard" method="POST">
         <div>
 
             <input type="text" name="title" placeholder="Enter Task Title">
