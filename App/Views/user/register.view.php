@@ -1,3 +1,5 @@
+<?php require "../App/Views/components/auth.navbar.php" ?>
+
 <link rel="stylesheet" href="../Public/CSS/auth.css">
 
 <div class="card">

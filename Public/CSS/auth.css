@@ -4,10 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin-top: 5%;
   }
 
   .card {
+
     width: 600px; /* Adjust the max-width for a wider card */
     background-color: white;
     border-radius: 12px;
@@ -64,12 +65,12 @@ body {
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
     font-size: 24px;
   }
 
   button[type="submit"]:hover {
     background-color: #555;
+    transform: scale(1.02);
   }
 
   a {
@@ -79,10 +80,12 @@ body {
     text-decoration: none;
     margin-top: 30px; 
     font-size: 22px; 
+    text-decoration: underline;
   }
 
   a:hover {
     color: #555;
+    transform: scale(1.02);
   }
 
   .flash {

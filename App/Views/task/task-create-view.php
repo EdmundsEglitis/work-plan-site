@@ -1,3 +1,7 @@
+<?php require "../App/Views/components/user.navbar.php" ?>
+
+<link rel="stylesheet" href="../Public/CSS/create.css">
+
 <div>
     <h1>Task List</h1>
 

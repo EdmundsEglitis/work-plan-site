@@ -1,3 +1,5 @@
+<?php require "../App/Views/components/auth.navbar.php" ?>
+
 <link rel="stylesheet" href="../Public/CSS/auth.css">
 
 
@@ -15,7 +17,6 @@
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" value="<?= $_POST["password"] ?? null?>" id="password" name="password" required>
-                    <a href="/user/lostPassword"><p>Forgot your password?</p></a>
                 </div>
 
                 <button type="submit">Login</button>
