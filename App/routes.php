@@ -9,6 +9,7 @@ return [
     '/task/index' => '../app/Controllers/task/index.task.php',
     '/task/create' => '../app/Controllers/task/create-tasks.php',
     '/task/dashboard' => '../app/Controllers/task/dashboard.php',
+    '/task/calendar' => '../app/Controllers/task/calendar.php',
     /*
     '/user/lostPassword' => '../app/Controllers/user/lostPassword.php',
     '/user/userSettings' => '../app/Controllers/user/userSettings.php',
