@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -5,8 +6,8 @@
     padding: 10px 0;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures the navbar is above other content */
 }
 
 .nav-item {
