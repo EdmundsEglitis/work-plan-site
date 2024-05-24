@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['title'], $_POST['deadl
         
 
         $result = $taskModel->createTask($userID, $title, $deadline, $status);
-
+        header("Location: /task/dashboard");
 }
 
     

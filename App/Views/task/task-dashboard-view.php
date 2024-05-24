@@ -7,14 +7,12 @@
 </head>
 <body>
 
-asdads
 <?php
-if (!empty($tasks)) {
     foreach ($tasks as $task) {
         echo '<div>';
         echo '<h1>' . $task['Title'] . '</h1>';
         echo '<p>' . $task['Status'] . '</p>';
         echo '</div>';
-        }} ?>
+    }?>
 </body>
 </html>
