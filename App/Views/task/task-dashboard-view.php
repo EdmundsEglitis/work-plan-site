@@ -1,12 +1,11 @@
-<?php require "../App/Views/components/user.navbar.php" ?>
-<!DOCTYPE html>
+
+<?php require "../App/Views/components/user.navbar.php" ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Public/CSS/dashboard.css">
-    
 </head>
 <body>
 <br>
@@ -17,6 +16,8 @@
     <h1 id="tasks-title">Tasks</h1>
 </div>
 <br>
+<div class="wrapper">
+    <div class="grey-div">
 <?php
 if (!empty($tasks)) {
     foreach ($tasks as $task) {
@@ -31,6 +32,7 @@ if (!empty($tasks)) {
     }
 }
 ?>
-
+   </div>
+</div>
 </body>
 </html>

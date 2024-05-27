@@ -1,30 +1,31 @@
-
-    body{
-        font-family: Arial, sans-serif;
-        margin-top: 100px;
-    }
+body{
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    background-color: #fff; /* White background for body */
+    color: #000; /* Black text color */
+}
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 #555; /* Black shadow */
     transition: 0.3s;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
-    background-color: white; /* Changed from #333 to white */
-    border: 3px solid #555; /* Added black border */
+    background-color: #888; /* White background for card */
+    border: 3px solid #888; /* Black border */
     margin: 10px;
-    float: left; /* This makes the cards align horizontally */
+    float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
     padding: 10px;
-    color: black; /* Added black color */
+    color: white; /* Black text color */
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Black shadow on hover */
     transform: scale(1.05);
 }
 
@@ -35,32 +36,50 @@
 .card h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: bold; /* Make the title bold */
 }
 
 .card p {
     font-size: 16px;
+    line-height: 1.5; /* Increase line height for better readability */
 }
 
 .card p.done {
-    color: green;
+    color: limegreen; /* Use a brighter shade of green */
 }
 
 .card p.not-done {
-    color: red;
+    color: crimson; /* Use a brighter shade of red */
 }
 
 #tasks-title {
-    color: black; /* Changed from white to black */
+    color: #333; /* Black text color */
+    font-size: 32px; /* Increase font size */
+    text-align: center; /* Center align the text */
 }   
 
 .title-div{
-    background-color: white; /* Changed from #333 to white */
-    border: 3px solid #333; 
-    border-radius: 10px;/* Added black border */
+    background-color: white; /* White background */
+    border: 3px solid #333; /* Black border */
+    border-radius: 10px;
     height: 50px;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.wrapper {
+    display: inline-block; /* This will make the wrapper's width fit its content */
+}
+
+.grey-div {
+    background-color: #333; /* Light grey background for the div containing the cards */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow the items to wrap as needed */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items vertically to the start */
 }
