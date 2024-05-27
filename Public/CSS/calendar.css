@@ -91,3 +91,11 @@ body{
 .task-button:hover {
     transform: scale(1.05);
 }
+
+.status-done {
+    color: green;
+}
+
+.status-not-done {
+    color: red;
+}

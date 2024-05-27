@@ -60,9 +60,15 @@ $dayCount = 1;
                 <span><?= $currentDayOfMonth ?></span>
                 <?php foreach ($tasksForDay as $task) : ?>
                     <div class="task">
-                        <p><?= $task['Title'] . ' - Status:' . $task['Status'] ?></p>
-                        <p>Lidz: <?= $task['Deadline'] ?></p>
-                        <button class="task-button" action="../task/edit">View</button>
+                    
+
+<p class="<?= strtolower($task['Status']) ?>">
+    <?= $task['Title'] ?> - Status: 
+    <span class="status-<?= strtolower(str_replace(' ', '-', $task['Status'])) ?>">
+        <?= $task['Status'] ?>
+    </span>
+</p>
+                    <button class="task-button" action="../task/edit">View</button>
                         <button class="task-button" action="../task/edit">Done</button>
                     </div>
                 <?php endforeach; ?>
