@@ -11,7 +11,7 @@
     grid-template-columns: repeat(7, 1fr);
     gap: 0.25rem;
     padding: 0.5rem 1rem;
-    background-color: #ffffff;
+    background-color: #333;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
 }
@@ -26,7 +26,7 @@
 .calendar-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000000;
+    color: white;
 }
 
 /* Weekday Labels styling */
@@ -34,16 +34,16 @@
     text-align: center;
     padding: 0.5rem 0;
     font-weight: bold;
-    color: #6b7280;
+    color: white;
 }
 
 /* Calendar Day styling */
 .calendar-day {
     text-align: left;
-    border: 1px solid #e5e7eb;
+    border: 3px solid #333;
     background-color: #e5e7eb;
-    padding: 1.5rem 0.25rem;
-    border-radius: 0.125rem;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -54,30 +54,31 @@
 
 /* Previous Month Day styling */
 .previous-month .previous-month-day {
-    color: #9ca3af;
+    color: #999;
 }
 
 /* Next Month Day styling */
 .next-month .next-month-day {
-    color: #9ca3af;
+    color: #999;
 }
 
 /* Task styling */
 .task {
-    background-color: #9ca3af;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
+    background-color: #333;
+    border: 2px solid white;
+    border-radius: 10px;
     color: #ffffff;
     padding: 0.125rem 0.25rem;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .task-button {
-    background-color: #d8b4fe;
-    color: #000000;
-    border-radius: 0.375rem;
-    padding: 0.25rem 0.5rem;
-    margin-top: 0.25rem;
+    background-color: #FA961E;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    margin-top: 10px;
     transition: transform 0.3s;
 }
 
