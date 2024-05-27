@@ -1,8 +1,8 @@
 <?php
 require_once "../app/Models/calendar.php";
-
+$userID = $_SESSION['user']["id"];
 $taskModel = new calendarModel();
-$calendar = $taskModel->calendarGetTasks();
+$calendar = $taskModel->calendarGetTasks($userID);
 
 if (!isset($_SESSION['user']['Username'])) {
     header("Location: /user/login");

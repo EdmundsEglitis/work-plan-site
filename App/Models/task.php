@@ -39,7 +39,7 @@ class taskModel {
 
     public function getTaskByID(int $taskID)
     {
-        $quary = $this->db->dbconn->prepare("SELECT * FROM Tasks WHERE TaskID = ?");
+        $quary = $this->db->dbconn->prepare("SELECT * FROM Tasks WHERE id = ?");
         $quary->execute([$taskID]);
         return $quary->fetch();
     }

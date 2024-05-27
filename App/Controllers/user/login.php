@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["user"] = $user;
             // Redirect after successful login
             
-            header("Location: /project");
+            header("Location: /task/dashboard");
             exit; // Ensure that no other output interferes with the header redirect
         } else {
             $errors[] = "Invalid password";

@@ -10,10 +10,11 @@ class calendarModel {
         $this->db = new Database();
     }
 
-    public function calendarGetTasks() {
-        $query = $this->db->dbconn->prepare("SELECT * FROM Tasks");
-        $query->execute();
+    public function calendarGetTasks(int $UserId) {
+        $query = $this->db->dbconn->prepare("SELECT * FROM Tasks WHERE UserID = ?");
+        $query->execute($UserId);
         $tasks = $query->fetchAll(PDO::FETCH_ASSOC);
+
     
         $calendar = [];
     
