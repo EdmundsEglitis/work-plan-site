@@ -14,7 +14,7 @@
 <br>
 <br>
 <div class="title-div">
-    <h1 id="tasks-title">Tasks:</h1>
+    <h1 id="tasks-title">Tasks</h1>
 </div>
 <br>
 <?php
