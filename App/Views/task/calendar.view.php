@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../Public/CSS/calendar.css">
+<?php require "../App/Views/components/user.navbar.php" ?>
 <?php
 $year = date('Y');
 $month = date('m');
