@@ -9,8 +9,9 @@
 </head>
 <body>
 <div class="card">
-    <h2><?= $task['Title'] ?></h2>
-    <p class="<?= ($task['Status'] == 'done') ? 'done' : 'not-done' ?>"><?= $task['Status'] ?></p>
+                    <h2><?= $task['Title'] ?></h2>
+                    <h3><?=$task['description'] ?> </h3>
+                    <p class="<?= ($task['Status'] == 'done') ? 'done' : 'not-done' ?>"><?= $task['Status'] ?></p>
 </div>
 </body>
 </html>
