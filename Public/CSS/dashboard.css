@@ -1,31 +1,29 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin-top: 100px;
-    background-color: #fff; /* White background for body */
-    color: #000; /* Black text color */
+    background-color: white; /* Black background for body */
+    color: #fff; /* White text color */
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 #555; /* Black shadow */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* White shadow */
     transition: 0.3s;
-    width: 200px;
-    height: 200px;
+    width: 220px;
     border-radius: 10px;
-    background-color: #888; /* White background for card */
-    border: 3px solid #888; /* Black border */
+    background-color: #333; /* Dark grey background for card */
+    border: none; /* No border */
     margin: 10px;
-    float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    padding: 10px;
-    color: white; /* Black text color */
+    padding: 15px;
+    color: #fff; /* White text color */
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Black shadow on hover */
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3); /* White shadow on hover */
     transform: scale(1.05);
 }
 
@@ -45,41 +43,57 @@ body{
 }
 
 .card p.done {
-    color: limegreen; /* Use a brighter shade of green */
+    color: limegreen; /* Bright green for done */
 }
 
 .card p.not-done {
-    color: crimson; /* Use a brighter shade of red */
+    color: crimson; /* Bright red for not done */
 }
 
 #tasks-title {
-    color: #333; /* Black text color */
+    color: white; /* White text color */
     font-size: 32px; /* Increase font size */
     text-align: center; /* Center align the text */
-}   
+    margin-bottom: 20px;
+}
 
-.title-div{
-    background-color: white; /* White background */
-    border: 3px solid #333; /* Black border */
+.title-div {
+    background-color: #333; /* Black background */
+    border: 3px solid #333; /* White border */
     border-radius: 10px;
     height: 50px;
-    width: 150px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px auto; /* Center horizontally */
 }
 
 .wrapper {
-    display: inline-block; /* This will make the wrapper's width fit its content */
-}
-
-.grey-div {
-    background-color: #333; /* Light grey background for the div containing the cards */
-    padding: 20px;
-    border-radius: 10px;
     display: flex; /* Use flexbox */
     flex-wrap: wrap; /* Allow the items to wrap as needed */
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: center; /* Center align the items */
     align-items: flex-start; /* Align items vertically to the start */
+    padding: 20px;
+}
+
+.show-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.show-view-button {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.show-view-button:hover {
+    transform: scale(1.05);
 }
