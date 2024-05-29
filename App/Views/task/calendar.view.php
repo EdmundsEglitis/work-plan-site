@@ -67,8 +67,11 @@ $dayCount = 1;
     <span class="status-<?= strtolower(str_replace(' ', '-', $task['Status'])) ?>">
         <?= $task['Status'] ?>
     </span>
-</p>
-                    <button class="task-button" action="../task/edit">View</button>
+</p>    
+<form method="post" action="/task/show" class="show-form">
+    <input type="hidden" name="id" value="<?= $task['id'] ?>">
+    <button type="submit" class="show-view-button">View Task</button>
+</form>
                         <button class="task-button" action="../task/edit">Done</button>
                     </div>
                 <?php endforeach; ?>
