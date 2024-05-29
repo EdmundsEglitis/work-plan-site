@@ -63,7 +63,7 @@ $dayCount = 1;
                     
 
 <p class="<?= strtolower($task['Status']) ?>">
-    <?= $task['Title'] ?> - Status: 
+    <?= $task['Title'] ?> <br><br> Status: 
     <span class="status-<?= strtolower(str_replace(' ', '-', $task['Status'])) ?>">
         <?= $task['Status'] ?>
     </span>
