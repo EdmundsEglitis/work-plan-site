@@ -26,7 +26,15 @@ if (!empty($tasks)) {
         } else {
             echo '<p class="not-done">' . $task['Status'] . '</p>';
         }
+        ?>
+
+        <form method="post" action="/task/show" class="show-form">
+        <input type="hidden" name="id" value="<?= $task['id'] ?>">
+        <button type="submit" class="show-view-button">View Task</button>
+        </form>
+        <?php
         echo '</div>';
+        
     }
 }
 ?>
