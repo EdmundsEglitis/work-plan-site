@@ -70,7 +70,7 @@ $dayCount = 1;
 </p>    
 <form method="post" action="/task/show" class="show-form">
     <input type="hidden" name="id" value="<?= $task['id'] ?>">
-    <button type="submit" class="show-view-button">View Task</button>
+    <button type="submit" class="task-button">View Task</button>
 </form>
                         <button class="task-button" action="../task/edit">Done</button>
                     </div>
