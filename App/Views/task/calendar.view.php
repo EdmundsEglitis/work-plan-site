@@ -68,7 +68,11 @@ $dayCount = 1;
                             <input type="hidden" name="id" value="<?= $task['id'] ?>">
                             <button type="submit" class="task-button">View Task</button>
                         </form>
-                        <button class="task-button" action="../task/edit">Done</button>
+                        <form method="post" action="/task/calendar" class="show-form">
+                        <input type="hidden" name="id" value="<?= $task['id'] ?>">
+                        <input type="hidden" name="status" value="<?= $task['Status'] ?>">
+                        <button type="submit" class="task-button">Mark as done</button>
+                        </form>
                     </div>
                 <?php endforeach; ?>
             </div>

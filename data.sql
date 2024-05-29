@@ -29,6 +29,5 @@ CREATE TABLE Users (
 
 
 
-ALTER TABLE planner
-ADD COLUMN user_id INT,
-ADD FOREIGN KEY (user_id) REFERENCES users(id);
+ALTER TABLE tasks
+ADD COLUMN description TEXT;

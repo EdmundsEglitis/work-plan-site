@@ -12,6 +12,7 @@ require_once "../App/Models/user.php";
         $taskModel = new taskModel();
 
             $tasks = $taskModel->getAllTasksByUser($loggedInUser['id']);
+
         require "../App/Views/task/task-dashboard-view.php";
 
 

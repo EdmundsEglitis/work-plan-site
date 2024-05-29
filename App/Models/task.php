@@ -64,6 +64,8 @@ class taskModel {
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
     }
-
-
-}
+    public function done(int $taskId, string $Status){
+             $quary = $this->db->dbconn->prepare("UPDATE tasks SET Status = :Status WHERE id = :id");
+            $quary->execute([':id' => $taskId, ':Status' => $Status]);
+        }
+    }
