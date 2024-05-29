@@ -56,22 +56,18 @@ $dayCount = 1;
             $currentDate = date('Y-m-d', strtotime("$year-$month-$currentDayOfMonth"));
             $tasksForDay = $calendar[$currentDate] ?? []; 
             ?>
-            <div class="calendar-day">
+            <div class="calendar-day<?= !empty($tasksForDay) ? ' with-tasks' : '' ?>">
                 <span><?= $currentDayOfMonth ?></span>
                 <?php foreach ($tasksForDay as $task) : ?>
                     <div class="task">
-                    
-
-<p class="<?= strtolower($task['Status']) ?>">
-    <?= $task['Title'] ?> <br><br> Status: 
-    <span class="status-<?= strtolower(str_replace(' ', '-', $task['Status'])) ?>">
-        <?= $task['Status'] ?>
-    </span>
-</p>    
-<form method="post" action="/task/show" class="show-form">
-    <input type="hidden" name="id" value="<?= $task['id'] ?>">
-    <button type="submit" class="task-button">View Task</button>
-</form>
+                        <p class="<?= strtolower($task['Status']) ?>">
+                            <?= $task['Title'] ?> <br><br> Status: 
+                            <span class="status-<?= strtolower(str_replace(' ', '-', $task['Status'])) ?>"><?= $task['Status'] ?></span>
+                        </p>    
+                        <form method="post" action="/task/show" class="show-form">
+                            <input type="hidden" name="id" value="<?= $task['id'] ?>">
+                            <button type="submit" class="task-button">View Task</button>
+                        </form>
                         <button class="task-button" action="../task/edit">Done</button>
                     </div>
                 <?php endforeach; ?>
