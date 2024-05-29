@@ -9,24 +9,25 @@ class taskModel {
         $this->db = new Database();
     }
 
-    public function createTask(int $UserID, string $Title, string $Deadline, string $Status)
+    public function createTask(int $UserID, string $Title, string $description, string $Deadline, string $Status)
     {
         $Title = htmlspecialchars($Title);
-
+        $description = htmlspecialchars($description);
+        
         if (strtotime($Deadline) === false) {
             return 0;
         }
     
-        $query = $this->db->dbconn->prepare("INSERT INTO Tasks (UserID, Title, Deadline, Status) VALUES (:UserID, :Title, :Deadline, :Status)");
-    
+        $query = $this->db->dbconn->prepare("INSERT INTO Tasks (UserID, Title, description,  Deadline, Status) VALUES (:UserID, :Title, :description, :Deadline, :Status)");
+        var_dump($query);
         $query->execute([
             ':UserID' => $UserID,
             ':Title' => $Title,
+            ':description' => $description,
             ':Deadline' => $Deadline,
             ':Status' => $Status
         ]);
-        
-        return $query->rowCount();
+        var_dump($query);
     }
     
 
