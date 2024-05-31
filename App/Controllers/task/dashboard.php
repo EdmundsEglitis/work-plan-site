@@ -14,7 +14,9 @@ require_once "../App/Models/user.php";
             $tasks = $taskModel->getAllTasksByUser($loggedInUser['id']);
 
         require "../App/Views/task/task-dashboard-view.php";
-
+        var_dump($_POST);
+        $taskModel->delete($_POST["id"]);
+        header("Location: /task/dashboard");
 
 
 ?>

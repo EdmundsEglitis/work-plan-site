@@ -13,8 +13,10 @@ if (!isset($_SESSION['user']['Username'])) {
 if(isset($_POST["id"])){
     if($_POST["status"] =="not done"){
         $Status="done";
+        header("Location: /task/calendar");
     }else{
         $Status="not done";
+        header("Location: /task/calendar");
     }
     $markDone->done($_POST["id"], $Status);
 }

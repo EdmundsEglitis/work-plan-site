@@ -68,4 +68,9 @@ class taskModel {
              $quary = $this->db->dbconn->prepare("UPDATE tasks SET Status = :Status WHERE id = :id");
             $quary->execute([':id' => $taskId, ':Status' => $Status]);
         }
+
+        public function delete(int $taskId){
+            $quary = $this->db->dbconn->prepare("DELETE FROM tasks WHERE id = :id");
+           $quary->execute([':id' => $taskId]);
+       }
     }
