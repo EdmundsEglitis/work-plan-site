@@ -7,11 +7,16 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Changed from space-between to flex-start */
     align-items: center;
     padding: 1rem;
     background-color: #333;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand a {
@@ -76,4 +81,9 @@ body {
     .navbar-menu.active {
         display: flex;
     }
+}
+
+/* Ensure content doesn't go under the fixed navbar */
+body {
+    padding-top: 4rem; /* Adjust this value if your navbar's height changes */
 }
