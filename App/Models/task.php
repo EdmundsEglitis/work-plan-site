@@ -44,26 +44,6 @@ class taskModel {
         $quary->execute([$taskID]);
         return $quary->fetch();
     }
-
-    public function getAllTasksByProject(int $projectID)
-    {
-        $query = $this->db->dbconn->prepare("SELECT * FROM Tasks WHERE ProjectID = ?");
-        $query->execute([$projectID]);
-        return $query->fetchAll();
-    }
-    public function getUsernameById($userID) {
-        $query = $this->db->dbconn->prepare("SELECT Username FROM Users WHERE UserID = ?");
-        $query->execute([$userID]);
-        $result = $query->fetch(PDO::FETCH_ASSOC);
-        return ($result) ? $result['Username'] : null;
-    }
-
-    public function getAllProjects()
-    {
-        $query = $this->db->dbconn->prepare("SELECT * FROM Projects"); 
-        $query->execute();
-        return $query->fetchAll(PDO::FETCH_ASSOC);
-    }
     public function done(int $taskId, string $Status){
              $quary = $this->db->dbconn->prepare("UPDATE tasks SET Status = :Status WHERE id = :id");
             $quary->execute([':id' => $taskId, ':Status' => $Status]);
