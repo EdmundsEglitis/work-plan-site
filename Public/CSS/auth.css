@@ -1,14 +1,13 @@
 body {
     background-color: white;
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 5%;
   }
 
   .card {
-
     width: 600px; /* Adjust the max-width for a wider card */
     background-color: white;
     border-radius: 12px;
@@ -52,9 +51,9 @@ body {
 
   .error {
     color: red;
-    margin-top: 10px;
+    margin-top: 0; /* Changed from 10px to 0 */
     font-size: 18px;
-  }
+}
 
   button[type="submit"] {
     width: 100%;
@@ -78,19 +77,18 @@ body {
     text-align: center;
     color: #333;
     text-decoration: none;
-    margin-top: 30px; 
-    font-size: 22px; 
+    margin-top: 0; /* Changed from 30px to 0 */
     text-decoration: underline;
-  }
+}
 
-  a:hover {
-    color: #555;
-    transform: scale(1.02);
-  }
+a:hover {
+  color: #555;
+  transform: scale(1.02);
+}
 
-  .flash {
-    text-align: center;
-    margin-top: 30px;
-    color: #28a745;
-    font-size: 22px;
-  }
+.flash {
+  text-align: center;
+  margin-top: 0; /* Changed from 30px to 0 */
+  color: #28a745;
+  font-size: 22px;
+}
