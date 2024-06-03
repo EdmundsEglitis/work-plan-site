@@ -9,21 +9,19 @@
 </head> 
 <body>
 <div class="card">
-                    <h2><?= $task['Title'] ?></h2>
-                    <h3><?=$task['description'] ?> </h3>
-                    <p class="<?= ($task['Status'] == 'done') ? 'done' : 'not-done' ?>"><?= $task['Status'] ?></p>
+    <h2><?= $task['Title'] ?></h2>
+    <h3><?=$task['description'] ?></h3>
+    <p class="<?= ($task['Status'] == 'done') ? 'done' : 'not-done' ?>"><?= $task['Status'] ?></p>
 
-                <form method="post" action="/task/dashboard" class="show-form" onsubmit="return confirmDelete()">
-                <input type="hidden" name="id" value="<?= $task['id'] ?>">
-                    <button type="submit" class="delete">Delete</button>
-                </form>
+    <form method="post" action="/task/dashboard" class="show-form" onsubmit="return confirmDelete()">
+        <input type="hidden" name="id" value="<?= $task['id'] ?>">
+        <button type="submit" class="delete">Delete</button>
+    </form>
 </div>
-</body>
 <script>
-
-
 function confirmDelete() {
-    return confirm('Are you sure you want to delete the lessons?');
+    return confirm('Are you sure you want to delete the task?');
 }
-    </script>
+</script>
+</body>
 </html>
