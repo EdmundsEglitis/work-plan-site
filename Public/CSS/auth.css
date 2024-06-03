@@ -1,84 +1,90 @@
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-
-  .card {
-    width: 600px; /* Adjust the max-width for a wider card */
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .card-header {
-    padding: 30px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    font-size: 24px;
-  }
-
-  .card-body {
-    padding: 30px;
-  }
-
-  .form-group {
-    margin-bottom: 30px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: black;
-    font-size: 24px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    font-size: 20px;
-  }
-
-  .error {
-    color: red;
-    margin-top: 0; /* Changed from 10px to 0 */
-    font-size: 18px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-  button[type="submit"] {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    height: 60px;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 24px;
-  }
+.card {
+  width: 600px; /* Adjust the max-width for a wider card */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  button[type="submit"]:hover {
-    background-color: #555;
-    transform: scale(1.02);
-  }
+.card-header {
+  padding: 30px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 24px;
+}
 
-  a {
-    display: block;
-    text-align: center;
-    color: #333;
-    text-decoration: none;
-    margin-top: 0; /* Changed from 30px to 0 */
-    text-decoration: underline;
+.card-body {
+  padding: 30px;
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+  align-items: center; /* Added */
+  justify-content: center; /* Added */
+}
+
+.form-group {
+  margin-bottom: 30px;
+  width: 100%; /* Added */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 20px;
+  box-sizing: border-box; /* Added */
+}
+
+.error {
+  color: red;
+  margin-top: 0; /* Changed from 10px to 0 */
+  font-size: 18px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  height: 60px;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+  transform: scale(1.02);
+}
+
+a {
+  display: block;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  margin-top: 0; /* Changed from 30px to 0 */
+  text-decoration: underline;
 }
 
 a:hover {
