@@ -1,4 +1,9 @@
 <?php
+
+if(!isset($_SESSION["user"])){
+    header("Location: /user/login");
+}
+else{
 $title = "dashboard";
 
 require_once "../App/Models/task.php";
@@ -18,4 +23,5 @@ require_once "../App/Models/user.php";
         $taskModel->delete($_POST["id"]);
         header("Location: /task/calendar");
         };
+    }
 ?>

@@ -1,4 +1,8 @@
 <?php
+if(!isset($_SESSION["user"])){
+    header("Location: /user/login");
+}
+else{
 $title = "show";
 
 require_once "../App/Models/task.php";
@@ -8,5 +12,5 @@ require_once "../App/Models/task.php";
     $task = $taskModel->getTaskById($taskId);
     
         require "../App/Views/task/task-show-view.php";
-
+}
 ?>

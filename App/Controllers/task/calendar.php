@@ -1,4 +1,9 @@
 <?php
+if(!isset($_SESSION["user"])){
+    header("Location: /user/login");
+}
+else{
+
 require_once "../app/Models/calendar.php";
 require_once "../app/Models/task.php";
 $userID = $_SESSION['user']["id"];
@@ -26,3 +31,4 @@ if(isset($_POST["id"])){
 $title = "Calendar";
 require_once "../app/Views/task/calendar.view.php";
 
+}

@@ -1,4 +1,9 @@
 <?php
+
+
+   var_dump($_SESSION["user"]);
+
+
 require dirname(dirname(__FILE__))."/Conf/Database.php";
 require dirname(dirname(__FILE__))."/Conf/config.php";
 

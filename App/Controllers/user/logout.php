@@ -1,4 +1,8 @@
 <?php
+if(!isset($_SESSION["user"])){
+    header("Location: /user/login");
+}
+else{
 session_unset();
 session_destroy();
 
@@ -7,3 +11,4 @@ if (isset($_COOKIE[session_name()])) {
 }
 
 header("Location: /");
+}
